@@ -1,0 +1,102 @@
+html {
+  scroll-behavior: smooth;
+}
+* {
+  box-sizing: border-box;
+}
+* {
+  border: 1px solid black;
+}
+body {
+  position: relative;
+}
+
+header {
+  font-size: 1.8em;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+nav {
+  position: relative;
+  border-right: 2px solid grey;
+  width: 300px;
+}
+nav .offcanvas-body {
+  overflow: auto;
+  height: 90vh;
+}
+nav .nav-link {
+  font-size: 1.1em;
+  text-transform: capitalize;
+}
+nav .nav-link:hover {
+  text-decoration: underline;
+}
+.active {
+  font-weight: bold;
+}
+main {
+  position: relative;
+  margin: 0 20em;
+  width: 67vw;
+}
+main header {
+  margin: 20px 0;
+}
+main section {
+  position: relative;
+}
+main p {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+main .img-container {
+  margin: 10px;
+  position: relative;
+}
+main img {
+  width: 720px;
+}
+code {
+  display: block;
+  background: #eee;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 5px;
+  color: darkblue !important;
+}
+main span {
+  margin-left: 20px;
+}
+
+@media only screen and (max-width: 992px) {
+  /* For mobile phones: */
+
+  #navbar {
+    position: fixed;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    width: 100% !important;
+    max-height: 275px;
+    border: none;
+    z-index: 1;
+  }
+  nav .container-fluid {
+    flex-direction: row !important;
+  }
+
+  #main-doc {
+    position: relative;
+    width: auto;
+    margin-top: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  main img {
+    width: 85vw;
+  }
+}

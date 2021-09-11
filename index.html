@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous" />
+    <link rel="icon" href="https://www.petanikode.com/images/icons/javascript/javascript-original.svg" type="image/x-icon" />
+
+    <title>Basic JS Doc-Page</title>
+  </head>
+  <body data-bs-spy="scroll" data-bs-target="#myScroll">
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container-fluid flex-column">
+        <header>JS Documentations</header>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">JS Documentations</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div id="myScroll" class="offcanvas-body">
+            <ul class="navbar-nav flex-column justify-content-start pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#apa_itu_javascript">Apa itu Javascript</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#sejarah_javascript">Sejarah Javascript</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#kenapa_belajar_javascript">Kenapa belajar Javascript</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#menulis_kode_javascript_pertama">Menulis kode Javascript pertama</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#comments">Comments</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#variable">Variable</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#tipe_data">Tipe data</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#operator">Operator</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#if/else_statement">If/else statement</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#switch_case_statement">Switch case statement</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#loop">Loop</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#referensi">Referensi</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <main id="main-doc">
+      <div class="container-fluid">
+        <section id="apa_itu_javascript" class="main-section">
+          <header>Apa itu Javascript</header>
+          <p>
+            JavaScript adalah bahasa pemrograman tingkat tinggi yang pada awalnya dikembangkan untuk membuat website menjadi lebih “hidup”. Bersama dengan HTML dan CSS, JavaScript menjadi bahasa pemrograman paling populer untuk
+            mengembangkan aplikasi berbasis web. Bahasa ini mampu memberikan logic ke dalam website, sehingga website tersebut memiliki fungsionalitas tambahan dan lebih interaktif.
+          </p>
+          <p>
+            Awalnya JavaScript dibuat supaya dapat berjalan di lingkungan browser dan membuat website menjadi lebih interaktif. Namun, saat ini Anda sebagai developer dapat menggunakan bahasa pemrograman JavaScript di berbagai lingkungan
+            pengembangan. Sehingga, tidak hanya sebatas browser/client, namun JavaScript juga bisa berjalan di server menggunakan Node.js.
+          </p>
+          <p>
+            JavaScript termasuk ke dalam kategori scripting language. Apa maksudnya? Salah satu ciri-ciri utama dari bahasa scripting adalah kode tidak perlu dikompilasi agar bisa dijalankan. Scripting language menggunakan interpreter untuk
+            menerjemahkan kode atau perintah yang kita tulis supaya dimengerti oleh mesin.
+          </p>
+          <p>
+            Itulah kenapa bahasa scripting tidak membutuhkan banyak kode yang perlu ditulis agar sebuah program bisa dijalankan. Hanya dengan satu baris kode berikut Anda sudah bisa membuat program yang menampilkan teks “Hello, World!” ke
+            layar.
+          </p>
+          <code> console.log(“Hello, World!”); </code>
+        </section>
+        <section id="sejarah_javascript" class="main-section">
+          <header>Sejarah javascript</header>
+          <p>
+            JavaScript dibuat pada tahun 1995 oleh Brendan Eich, programmer dari Netscape. Bahasa ini awalnya dinamai “Mocha” kemudian berubah menjadi “LiveScript”. Pada saat itu bahasa Java merupakan bahasa pemrograman yang paling populer.
+            Untuk memanfaatkan kepopulerannya, nama LiveScript pun diubah menjadi “JavaScript”. Jadi, meskipun namanya mirip, JavaScript tidak ada hubungannya dengan bahasa pemrograman Java.
+          </p>
+          <p>
+            Setelah diadopsi di luar Netscape, JavaScript distandarisasi oleh European Computer Manufacturers Association (ECMA). Sejak saat itu JavaScript juga dikenal dengan ECMAScript. Meskipun begitu, masih banyak yang menyebutnya
+            dengan JavaScript hingga saat ini.
+          </p>
+        </section>
+        <section id="kenapa_belajar_javascript" class="main-section">
+          <header>Kenapa belajar javascript</header>
+          <p>Alasan utamanya karena JavaScript merupakan bahasa yang penting untuk Anda kuasai jika ingin menjadi web developer, baik itu front-end maupun back-end.</p>
+          <p>Berikut ini adalah beberapa kelebihan dari JavaScript yang dapat Anda pertimbangkan sebelum mulai mempelajari JavaScript:</p>
+          <ul>
+            <li><strong>JavaScript bahasa yang versatile</strong></li>
+            <p>JavaScript bisa berjalan di lingkungan browser, server, bahkan desktop. Artinya, jika Anda bisa menguasai bahasa ini, maka skill Anda bisa digunakan di mana pun.</p>
+
+            <li>
+              <strong>Mudah dipelajari oleh pemula</strong>
+              <p>
+                JavaScript termasuk salah satu bahasa pemrograman yang ramah bagi pemula. Anda tidak perlu menginstal software dan lingkungan pengembangan lain yang rumit untuk memulai membuat program dengan JavaScript. Cukup dengan browser
+                Anda sudah bisa menulis kode JavaScript dan menjalankannya sekaligus.
+              </p>
+              <p>
+                Selain itu, sebagai salah satu bahasa pemrograman paling populer, JavaScript memiliki komunitas yang besar pada situs seperti StackOverflow yang siap membantu Anda jika memiliki pertanyaan atau kesulitan dalam JavaScript.
+              </p>
+            </li>
+            <li><strong>Potensi karir yang meyakinkan</strong></li>
+            <p>
+              Mengikuti perkembangan teknologi dan banyaknya bisnis yang mulai merambah ke ranah digital, JavaScript menjadi salah satu skill yang paling banyak dicari di industri. Jika Anda mencari kata kunci “JavaScript” pada laman
+              pencarian kerja seperti JobStreet, akan muncul hampir 1.500 lowongan pekerjaan di Indonesia yang bisa Anda lamar.
+            </p>
+            <p>
+              Bukan hanya ramai peminat, pekerjaan yang berkaitan dengan JavaScript juga dihargai cukup tinggi. Menurut data yang diambil dari situs id.neuvoo.com rata-rata gaji seorang Front End Developer adalah Rp 7.500.000 per bulan dan
+              untuk Back End Developer adalah Rp 8.500.000 per bulan.
+            </p>
+          </ul>
+          <p></p>
+        </section>
+        <section id="menulis_kode_javascript_pertama" class="main-section">
+          <header>Menulis Kode JavaScript Pertama</header>
+          <p>
+            Menulis kode dalam suatu bahasa pemrograman sederhananya adalah menuliskan instruksi-instruksi untuk dijalankan oleh komputer. Kode di bawah ini merupakan instruksi bagi terminal atau konsol untuk mencatat (log) kalimat “Hello,
+            World!”.
+          </p>
+          <code> console.log(“Hello, World!”); </code>
+          <p>
+            Kode atau teks yang berada di dalam tanda kurung adalah pesan yang ingin ditampilkan. Pada contoh kode di atas, kita menggunakan tanda kutip (“”) untuk menandakan bahwa pesan yang ingin ditampilkan merupakan sebuah string atau
+            teks. Kita akan membahas mengenai tipe data pada beberapa modul ke depan. Saat ini kita akan fokus untuk menampilkan teks terlebih dulu. Sekarang cobalah untuk menampilkan nama Anda sendiri ke konsol.
+          </p>
+        </section>
+        <section id="comments" class="main-section">
+          <header>Comments</header>
+          <p>
+            Pada materi sebelumnya kita telah membahas bahwa kode yang kita tulis merupakan kumpulan instruksi yang harus dijalankan oleh komputer. Salah satu instruksi yang penting adalah memberi tahu komputer untuk mengabaikan perintah
+            yang kita tulis. Instruksi yang ditulis dalam suatu program tetapi tidak dijalankan oleh komputer disebut “comments”.
+          </p>
+          <p>Sebuah komentar akan dilewatkan oleh interpreter atau compiler, sehingga tidak akan memengaruhi alur program yang kita tulis. Komentar ini bisa digunakan sebagai dokumentasi atau penjelasan dari kode yang kita tulis.</p>
+          <p>Terdapat dua metode untuk memberikan komentar. Pertama, untuk memberikan komentar pada satu baris saja, kita bisa gunakan tanda dua garis miring (//) di awal baris.</p>
+          <code>
+            // Ini merupakan komentar satu baris, kode di bawah tidak akan dijalankan <br />
+            <br />
+
+            // console.log("Halo!");
+          </code>
+          <p>
+            Lalu, untuk memberikan komentar lebih dari satu baris kita bisa menggunakan tanda /* sebagai pembuka komentar dan tanda */ untuk penutup komentar. Teks apa pun yang berada di antara tanda tersebut akan dijadikan komentar dan
+            tidak akan dieksekusi.
+          </p>
+          <code> /* Ini merupakan komentar dengan lebih dari satu baris Teks apapun yang berada disini akan dijadikan komentar. Ketika menggunakan ini, jangan lupa untuk menutupnya. */ </code>
+        </section>
+        <section id="variable" class="main-section">
+          <header>Variable</header>
+          <p>
+            Ketika menulis sebuah program, kita memberi tahu komputer cara memproses informasi seperti mencetak teks ke layar atau melakukan operasi perhitungan. Untuk lebih mudah dalam penggunaan dan pemanggilan data, kita bisa
+            memanfaatkan variabel. Variabel umumnya digunakan untuk menyimpan informasi atau nilai yang akan dikelola dalam sebuah program.
+          </p>
+          <p>
+            Pada JavaScript setidaknya ada tiga cara untuk mendeklarasikan sebuah variabel, yaitu menggunakan keyword var, let, dan const. Pada versi ECMAScript 2015 (ES6) dikenalkan deklarasi variabel dengan let dan const untuk
+            menggantikan var yang dinilai kontroversial dan rawan menimbulkan bug.
+          </p>
+          <code>
+            let lastName = "Skywalker";
+            <br /><br />
+            console.log(lastName);
+            <br /><br />
+            /* output Skywalker */
+          </code>
+          <p>Kode untuk menginisialisasikan nilai ke dalam sebuah variabel dengan tanda sama dengan (=) ini disebut dengan assignment expression.</p>
+          <p>
+            Tunggu sebentar. Kita kembali bertemu dengan istilah statement dan expression. Karena expression pasti menghasilkan nilai, sehingga mereka bisa muncul di mana pun dalam program JavaScript. Sementara itu, statement merujuk pada
+            aksi. Sehingga, pada bagian kode tertentu yang membutuhkan nilai tidak bisa kita isi dengan sebuah statement. Contohnya seperti kode berikut:
+          </p>
+          <code>
+            let fullName = let lastName; <br />
+            // Error karena let lastName adalah sebuah statement untuk deklarasi variabel. Statement tidak bisa berada di posisi expression. <br /><br />
+            let fullName = (lastName = "Skywalker"); <br />// (lastName = "Skywalker") merupakan expression, sehingga kode ini tidak error. <br /><br />
+            let fullName = "Luke" + "Skywalker"; <br />// "Luke" + "Skywalker" juga merupakan expression, sehingga kode ini tidak error.
+          </code>
+          <p>Melalui contoh kode di atas, kita bisa bayangkan variabel sebagai sebuah kotak atau wadah yang menyimpan nilai. Proses inisialisasi atau assignment berarti kita memasukkan nilai ke dalam kotak tersebut.</p>
+          <div class="img-container text-center p-4">
+            <img src="https://d17ivq9b7rppb3.cloudfront.net/original/academy/202103310114541098bff96675c2040064996426992ce0.png" alt="let analogy" />
+          </div>
+          <p>Variabel lastName di atas akan tersimpan di dalam memori komputer.</p>
+          <p>Berikut beberapa aturan dalam penamaan variabel yang perlu Anda ketahui:</p>
+          <ul>
+            <li>Harus dimulai dengan huruf atau underscore (_).</li>
+            <li>Dapat terdiri dari huruf, angka, dan underscore (_) dengan berbagai kombinasi.</li>
+            <li>Tidak boleh mengandung spasi (whitespace). Jika penamaan variabel lebih dari dua kata, tuliskan secara camelCase. Contoh firstName, lastName, catName, dll.</li>
+            <li>Tidak boleh mengandung karakter spesial (! . , / \ + * = dll.)</li>
+          </ul>
+          <p>
+            Const merupakan kependekan dari constant. Artinya, kita akan mendeklarasikan sebuah variabel dengan const ketika ingin variabel bernilai konstan dan tidak bisa diubah setelah diinisialisasi nilainya. Bayangkan variabel bernilai
+            const sebagai sebuah kotak yang ditutup dan disegel setelah diisi, sehingga nilainya tidak bisa diubah lagi.
+          </p>
+          <div class="img-container text-center p-4">
+            <img src="https://d17ivq9b7rppb3.cloudfront.net/original/academy/20210331011624005b7055f701fb0506b3184d9dba9094.png" alt="const analogy" />
+          </div>
+          <p>Jika menginisialisasi kembali nilai variabel yang menggunakan const, kita akan mendapati eror “TypeError: Assignment to constant variable.”</p>
+          <code>
+            const z = 100; <br />
+            console.log(z); <br /><br />
+            z = 200; <br />
+            console.log(z) <br /><br />
+
+            /* TypeError: Assignment to constant variable. */
+          </code>
+        </section>
+        <section id="tipe_data" class="main-section">
+          <header>Tipe data</header>
+          <p>Pada JavaScript terdapat beberapa tipe data sebagai berikut:</p>
+          <p><strong>Undefined</strong></p>
+          <p>Tipe data ini terbentuk ketika sebuah variabel tidak memiliki nilai. Artinya, ketika kita mendeklarasikan variabel tanpa menginisialisasikan nilainya, variabel tersebut menjadi undefined. Contoh:</p>
+          <code>
+            let x; <br />
+            console.log(typeof(x)); <br /><br />
+
+            /* output: undefined */
+          </code>
+          <p><strong>Numbers</strong></p>
+          <p>Nilai dari tipe data number adalah angka. Variabel bertipe data number dituliskan seperti angka pada umumnya.</p>
+          <p>Jika angka tersebut merupakan sebuah bilangan desimal, maka kita bisa gunakan tanda titik pada pecahan bilangannya.</p>
+          <code>
+            let x = 10; <br />
+            console.log(typeof(x)) <br /><br />
+
+            /* output: number */ <br /><br />
+
+            let y = 17.25; <br />
+            console.log(typeof(y)) <br /><br />
+
+            /* output: number */
+          </code>
+          <p><strong>Strings</strong></p>
+          <p>Tipe data selanjutnya adalah string yang merupakan sebuah teks. Untuk menetapkan nilai sebagai string pada variabel gunakan tanda petik satu (‘) atau petik dua (“) di antara teksnya. Contohnya:</p>
+          <code>
+            let greet = "Hello"; <br />
+            console.log(typeof(greet)) <br /><br />
+
+            /* output: string */
+          </code>
+          <p>Selain concatenation, string pada JavaScript juga mendukung string interpolation. Sederhananya, kita bisa memasukkan variabel ke dalam sebuah string template. Contohnya adalah seperti berikut:</p>
+          <code>
+            const myName = "Luke"; <br />
+            console.log(`Hello, my name is ${myName}.`); <br /><br />
+
+            /* output: Hello, my name is Luke. */
+          </code>
+          <p>
+            Perhatikan bahwa untuk mendefinisikan string template, Anda perlu menggunakan backticks (`), biasanya terletak di keyboard di sebelah kiri tombol 1). Di dalam string letakkan variabel yang ingin dimasukkan ke dalam placeholder
+            ${myName}.
+          </p>
+          <p><strong>Boolean</strong></p>
+          <p>
+            Boolean hanya memiliki dua nilai, yaitu true atau false. Tipe data ini menjadi kunci utama dalam penentuan logika. Kita akan banyak menggunakannya nanti dalam materi if/else statement. Untuk menetapkan nilai boolean pada
+            variabel, gunakan keyword true atau false seperti di bawah ini.
+          </p>
+          <code>
+            const a = 10; <br />
+            const b = 12; <br /><br />
+
+            let isGreater = a > b; <br />
+            let isLess = a < b; <br /><br />
+
+            console.log(isGreater); <br />
+            console.log(isLess); <br /><br />
+
+            /* output: <br />
+            false <br />
+            true <br />
+            */
+          </code>
+          <p><strong>Null</strong></p>
+          <p>Tipe berikutnya adalah null. Serupa dengan undefined, namun null perlu diinisialisasikan pada variabel. Null biasa digunakan sebagai nilai sementara pada variabel, tapi sebenarnya nilai tersebut “tidak ada”.</p>
+          <p>
+            Terkadang kita perlu membuat sebuah variabel, namun kita belum memerlukan nilai apa-apa dan tidak ingin terikat oleh tipe data apa pun. Nah, daripada kita tidak menetapkan nilai apa pun (variabel akan undefined) sebaiknya kita
+            beri nilai null pada variabel tersebut dan ubah nanti ketika kita membutuhkannya.
+          </p>
+          <code>
+            let someLaterData = null; <br />
+            console.log(someLaterData); <br /><br />
+
+            /* output: <br />
+            null <br />
+            */
+          </code>
+        </section>
+        <section id="operator" class="main-section">
+          <header>Operator</header>
+          <p>Operator dalam bahasa pemrograman sendiri adalah simbol yang memberi tahu interpreter untuk melakukan operasi seperti matematika, relasional, atau logika untuk memberikan hasil tertentu.</p>
+          <p><strong>Assignment Operator</strong></p>
+          <p>
+            Pada dasarnya operator ini adalah tanda sama dengan (=), di mana tanda ini digunakan untuk menginisialisasi nilai pada variabel. Tempatkan variabel yang ingin diberi nilai di sebelah kiri, sementara nilainya di sebelah kanan. Di
+            antara keduanya terdapat operator assignment.
+          </p>
+          <code>
+            let x = 10; <br />
+            let y = 5; <br /><br />
+
+            x += y; // artinya -> x = x + y; <br />
+            x -= y; // artinya -> x = x - y; <br />
+            x *= y; // artinya -> x = x * y; <br />
+            x /= y; // artinya -> x = x / y; <br />
+            x %= y; // artinya -> x = x % y;
+          </code>
+          <p><strong>Comparison Operator</strong></p>
+          <p>Ketika kita melakukan perbandingan antara dua nilai, JavaScript akan mengevaluasi kedua nilai tersebut dan mengembalikan boolean dengan nilai hasil perbandingan tersebut, baik false atau true. Berikut contohnya:</p>
+          <code>
+            let a = 10; <br />
+            let b = 12; <br /><br />
+
+            console.log(a < b); <br />
+            console.log(a > b); <br /><br />
+
+            /* output <br />
+            true <br />
+            false <br />
+            */
+          </code>
+          <p><strong>Logical Operator</strong></p>
+          <p>
+            Terdapat beberapa operator lain yang dapat kita gunakan untuk menetapkan logika yang lebih kompleks, yakni dengan logical operators. Dengan logical operator, kita dapat menggunakan kombinasi dari dua nilai boolean atau bahkan
+            lebih dalam menetapkan logika.
+          </p>
+          <p>Pada JavaScript terdapat tiga buah karakter khusus yang berfungsi sebagai logical operator. Berikut macam-macam logical operator dan fungsinya:</p>
+          <code>
+            let a = 10; <br />
+            let b = 12; <br /><br />
+
+            /* AND operator */ <br />
+            console.log(a < 15 && b > 10); // (true && true) -> true <br />
+            console.log(a > 15 && b > 10); // (false && true) -> false <br /><br />
+
+            /* OR operator */ <br />
+            console.log(a < 15 || b > 10); // (true || true) -> true <br />
+            console.log(a > 15 || b > 10); // (false || true) -> true <br /><br />
+
+            /* NOT operator */ <br />
+            console.log(!(a < 15)); // !(true) -> false <br />
+            console.log(!(a < 15 && b > 10)); // !(true && true) -> !(true) -> false <br /><br />
+
+            /* output <br />
+            true <br />
+            false <br />
+            true <br />
+            true <br />
+            false <br />
+            false <br />
+            */
+          </code>
+        </section>
+        <section id="if/else_statement" class="main-section">
+          <header>If/Else Statement</header>
+          <p>
+            Ketika mengembangkan sebuah program, kita akan bertemu dengan alur bercabang tergantung pada kondisi yang terjadi. Untuk mengakomodasi dan mengecek sebuah kondisi dalam JavaScript, kita menggunakan kata kunci
+            <strong>if</strong>.
+          </p>
+          <p>Statement if akan menguji suatu kondisi. Jika kondisi bernilai true, maka blok kode di dalamnya akan dijalankan. Sebaliknya, jika bernilai false, maka proses yang ditentukan akan dilewatkan.</p>
+          <div class="img-container text-center p-4">
+            <img src="https://d17ivq9b7rppb3.cloudfront.net/original/academy/2021032614212952aba0a5b1a44e18d7e5234517c4f671.png" alt="if else analogy" />
+          </div>
+          <p>Flowchart di atas jika diterjemahkan menjadi kode, akan menjadi seperti berikut:</p>
+          <code>
+            const isRaining = true; <br /><br />
+
+            console.log("Persiapan sebelum berangkat kegiatan."); <br />
+            if (isRaining) { <br />
+            <span>console.log("Hari ini hujan. Bawa payung.");</span> <br />
+            } <br />
+            console.log("Berangkat kegiatan."); <br /><br />
+
+            /* output: <br />
+            Persiapan sebelum berangkat kegiatan. <br />
+            Hari ini hujan. Bawa payung. <br />
+            Berangkat kegiatan. <br />
+            */
+          </code>
+          <p>Kita juga bisa mengecek beberapa kondisi sekaligus dengan menggabungkan else dan if. Contohnya adalah seperti program berikut:</p>
+          <code>
+            let language = "French"; <br />
+            let greeting = "Selamat Pagi" <br /><br />
+
+            if(language === "English") { <br />
+            <span>greeting = "Good Morning!";</span> <br />
+            } else if(language === "French") { <br />
+            <span>greeting = "Bonjour!"</span> <br />
+            } else if(language === "Japanese") { <br />
+            <span>greeting = "Ohayou Gozaimasu!"</span> <br />
+            } else { <br />
+            <span>return</span> <br />
+            } <br /><br />
+
+            console.log(greeting); <br /><br />
+
+            /* output <br />
+            Bonjour! <br />
+            */
+          </code>
+        </section>
+        <section id="switch_case_statement" class="main-section">
+          <header>Switch Case Statement</header>
+          <p>Sebelumnya kita telah mempelajari bagaimana percabangan logika menggunakan if statement. Selain if, JavaScript juga mendukung switch statement untuk melakukan pengecekan banyak kondisi dengan lebih mudah dan ringkas.</p>
+          <code>
+            switch (expression) { <br />
+            case value1: <br />
+            // do something <br />
+            break; <br />
+            case value2: <br />
+            // do something <br />
+            break; <br />
+            ... <br />
+            ... <br />
+            default: <br />
+            // do something else <br />
+            }
+          </code>
+          <p>
+            Tanda kurung setelah keyword switch berisi variabel atau expression yang akan dievaluasi. Kemudian untuk setiap kondisi yang mungkin terjadi, kita masukkan keyword case diikuti dengan nilai yang valid. Jika kondisi pada case
+            sama dengan variabel pada switch, maka blok kode setelah titik dua (:) akan dijalankan. Keyword break digunakan untuk keluar dari proses switch. Terdapat satu case bernama default yang memiliki fungsi yang sama dengan keyword
+            else pada control flow if-else. Jika tidak ada nilai yang sama dengan variabel pada switch, maka blok kode ini akan dijalankan.
+          </p>
+          <p>Berikut ini adalah contoh kode dari materi if-else yang dikonversi menjadi statement switch:</p>
+          <code>
+            let language = "French"; <br />
+            let greeting = null; <br /><br />
+
+            switch (language) { <br />
+            <span>case "English":</span> <br />
+            <span
+              ><span>greeting = "Good Morning!"; <br /></span
+            ></span>
+            <span
+              ><span> break; <br /></span
+            ></span>
+            <span>case "French":</span> <br />
+            <span><span>greeting = "Bonjour!";</span></span> <br />
+            <span><span>break;</span></span> <br />
+            <span>case "Japanese":</span> <br />
+            <span><span>greeting = "Ohayou Gozaimasu!";</span></span> <br />
+            <span><span>break;</span></span> <br />
+            <span>default:</span> <br />
+            <span><span>greeting = "Selamat Pagi!";</span></span> <br />
+            } <br /><br />
+
+            console.log(greeting); <br /><br />
+
+            /* output <br />
+            Bonjour! <br />
+            */
+          </code>
+        </section>
+        <section id="loop" class="main-section">
+          <header>Loop</header>
+          <p>
+            Ketika menulis program komputer, akan ada situasi di mana kita perlu melakukan hal yang sama berkali-kali. Misalnya kita ingin menampilkan semua nama pengguna yang terdaftar di aplikasi atau sesederhana menampilkan angka 1
+            sampai 10. Tentunya tidak praktis jika kita menulis kode seperti berikut:
+          </p>
+          <code>
+            console.log(1); <br />
+            console.log(2);<br />
+            console.log(3);<br />
+            console.log(4);<br />
+            console.log(5);<br />
+            console.log(6);<br />
+            console.log(7);<br />
+            console.log(8);<br />
+            console.log(9);<br />
+            console.log(10);
+          </code>
+          <p>
+            Bagaimana jika kita perlu menampilkan angka 1 sampai 100? Sudah terbayang repotnya, bukan? Maka dari itu kita perlu mempelajari teknik yang dapat mengatasi permasalahan tersebut, teknik ini disebut dengan looping. JavaScript
+            memiliki banyak opsi untuk melakukan looping atau perulangan kode, antara lain:
+          </p>
+          <p><strong>For Loop</strong></p>
+          <code>
+            for(inisialisasi variabel; test kondisi; perubahan nilai variabel) { <br />
+            // do something <br />
+            }
+          </code>
+          <p>Berikut ini contoh penerapannya secara nyata:</p>
+          <code>
+            for(let i = 0; i < 5; i++) { <br />
+            console.log(i); <br />
+            } <br /><br />
+
+            /* output <br />
+            0 <br />
+            1 <br />
+            2 <br />
+            3 <br />
+            4 <br />
+            */
+          </code>
+          <p>Terdapat tiga bagian utama dalam sintaks for di atas:</p>
+          <ul>
+            <li>Pertama, variabel i sebagai index iterasi. Pada variabel ini kita menginisialisasi nilai awal dari perulangan.</li>
+            <li>Kedua, operasi perbandingan. Pada bagian ini, JavaScript akan melakukan pengecekan kondisi apakah perulangan masih perlu dilakukan. Jika bernilai true, maka kode di dalam blok for akan dijalankan.</li>
+            <li>
+              Ketiga, increment/decrement. Di sini kita melakukan penambahan atau pengurangan variabel iterasi. Jadi, pada contoh di atas variabel i akan ditambah dengan 1 di setiap akhir perulangan. Perubahan nilai ini penting karena jika
+              kita mengubah nilainya, proses perulangan dapat berjalan selamanya karena kondisi akan terus terpenuhi.
+            </li>
+          </ul>
+          <p>JIka diartikan, maka kode di atas bisa dimaknai dengan “Jika i kurang dari 5, maka tampilkan nilai i.”</p>
+          <p><strong>For Of Loop</strong></p>
+          <code>
+            for(arrayItem of myArray) { <br />
+            // do something <br />
+            }
+          </code>
+          <p>
+            Cara lain dalam melakukan looping adalah menggunakan for..of. For of mulai hadir pada ECMAScript 2015 (ES6). Cara ini jauh lebih sederhana dan modern dibanding for loop biasa. Sintaks dasar dari for of loop adalah seperti ini:
+          </p>
+          <code>
+            let myArray = ["Luke", "Han", "Chewbacca", "Leia"]; <br /><br />
+
+            for(const arrayItem of myArray) { <br />
+            console.log(arrayItem) <br />
+            } <br />
+            <br />
+
+            /* output <br />
+            Luke <br />
+            Han <br />
+            Chewbacca <br />
+            Leia <br />
+            */
+          </code>
+        </section>
+        <section id="referensi" class="main-section">
+          <header>Referensi</header>
+          <p>Semua materi dalam dokumentasi ini berasal dari <a href="https://www.dicoding.com/" target="_blank">Dicoding</a>.</p>
+        </section>
+      </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+  </body>
+</html>
